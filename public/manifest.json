@@ -1,0 +1,29 @@
+{
+  "name": "오버워치 게임 친구 찾기",
+  "short_name": "OW 친구찾기",
+  "description": "오버워치 게임 친구를 AI 매칭으로 찾아보세요",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "social"],
+  "lang": "ko-KR",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

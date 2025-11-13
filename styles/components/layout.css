@@ -1,0 +1,49 @@
+/* Overwatch Layout Styles */
+
+.ow-layout {
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    var(--ow-gradient-start) 0%,
+    var(--ow-gradient-end) 100%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ow-container {
+  max-width: var(--ow-container-max-width);
+  margin: 0 auto;
+  padding: var(--ow-container-padding);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ow-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.ow-section {
+  padding: var(--ow-spacing-xl) 0;
+}
+
+
+/* Spacing utilities - Margin Top */
+.ow-mt-xs { margin-top: var(--ow-spacing-xs); }
+.ow-mt-sm { margin-top: var(--ow-spacing-sm); }
+.ow-mt-md { margin-top: var(--ow-spacing-md); }
+.ow-mt-lg { margin-top: var(--ow-spacing-lg); }
+.ow-mt-xl { margin-top: var(--ow-spacing-xl); }
+
+/* Spacing utilities - Margin Bottom */
+.ow-mb-xs { margin-bottom: var(--ow-spacing-xs); }
+.ow-mb-sm { margin-bottom: var(--ow-spacing-sm); }
+.ow-mb-md { margin-bottom: var(--ow-spacing-md); }
+.ow-mb-lg { margin-bottom: var(--ow-spacing-lg); }
+.ow-mb-xl { margin-bottom: var(--ow-spacing-xl); }

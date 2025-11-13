@@ -1,0 +1,148 @@
+/* Overwatch Theme CSS Variables */
+/* 오버워치 MBTI 스타일 테마 변수 정의 */
+
+/* ========================================
+   폰트 로딩 (Font Loading)
+   ======================================== */
+@font-face {
+  font-family: 'koverwatch';
+  src: url('./fonts/koverwatch.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* 폰트 로딩 최적화 */
+}
+
+:root {
+  /* ========================================
+     색상 (Colors)
+     ======================================== */
+  --ow-primary: #FA9C1D;
+  --ow-primary-hover: #E88A0D;
+  --ow-secondary: #4A4C4E;
+  --ow-background: #FFFFFF;
+  --ow-text-primary: #212529;
+  --ow-text-secondary: #4A4C4E;
+  --ow-white: #FFFFFF;
+  
+  /* ========================================
+     그라데이션 (Gradient)
+     ======================================== */
+  --ow-gradient-start: #E8E4F3;
+  --ow-gradient-end: #D4E4F7;
+  
+  /* ========================================
+     타이포그래피 (Typography)
+     ======================================== */
+  --ow-font-family: 'koverwatch', sans-serif;
+  --ow-font-size-h1: 50px;
+  --ow-font-size-h2: 30px;
+  --ow-font-size-body: 16px;
+  --ow-font-weight-heading: 500;
+  --ow-font-weight-normal: 400;
+  --ow-line-height-heading: 1.2;
+  --ow-line-height-body: 1.5;
+  
+  /* ========================================
+     간격 (Spacing)
+     ======================================== */
+  --ow-spacing-xs: 8px;
+  --ow-spacing-sm: 12px;
+  --ow-spacing-md: 20px;
+  --ow-spacing-lg: 32px;
+  --ow-spacing-xl: 48px;
+  
+  /* ========================================
+     Border Radius
+     ======================================== */
+  --ow-radius-sm: 5px;
+  --ow-radius-md: 10px;
+  --ow-radius-lg: 15px;
+  --ow-radius-full: 50%;
+  
+  /* ========================================
+     Transitions
+     ======================================== */
+  --ow-transition-fast: 0.2s ease;
+  --ow-transition-normal: 0.5s cubic-bezier(0.17, 0.66, 0.08, 1.02);
+  --ow-transition-slow: 0.8s ease;
+  
+  /* ========================================
+     Shadows
+     ======================================== */
+  --ow-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --ow-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --ow-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
+  /* ========================================
+     Layout
+     ======================================== */
+  --ow-container-max-width: 960px;
+  --ow-container-padding: 0 15px;
+}
+
+/* ========================================
+   글로벌 스타일 (Global Styles)
+   ======================================== */
+body {
+  font-family: var(--ow-font-family);
+  font-size: var(--ow-font-size-body);
+  line-height: var(--ow-line-height-body);
+  color: var(--ow-text-primary);
+  background: var(--ow-background);
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================================
+   이미지 스타일 (Image Styles)
+   ======================================== */
+
+/* 로고 스타일 */
+.ow-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 아바타 기본 스타일 */
+.ow-avatar {
+  border-radius: var(--ow-radius-full);
+  object-fit: cover;
+}
+
+/* 아바타 크기 변형 */
+.ow-avatar--small {
+  width: 40px;
+  height: 40px;
+}
+
+.ow-avatar--medium {
+  width: 80px;
+  height: 80px;
+}
+
+.ow-avatar--large {
+  width: 120px;
+  height: 120px;
+}
+
+/* 이미지 중앙 정렬 유틸리티 */
+.ow-image-center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ========================================
+   접근성: Reduced Motion 지원
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

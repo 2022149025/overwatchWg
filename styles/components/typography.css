@@ -1,0 +1,129 @@
+/* Typography Styles */
+/* 오버워치 MBTI 타이포그래피 스타일 */
+
+/* ========================================
+   헤딩 스타일 (Heading Styles)
+   ======================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ow-font-family);
+  font-weight: var(--ow-font-weight-heading);
+  line-height: var(--ow-line-height-heading);
+  color: var(--ow-text-secondary);
+  margin: 0;
+  text-align: center;
+}
+
+h1, .ow-h1 {
+  font-size: var(--ow-font-size-h1);
+  margin-top: var(--ow-spacing-md);
+  margin-bottom: var(--ow-spacing-xs);
+}
+
+h2, .ow-h2 {
+  font-size: var(--ow-font-size-h2);
+  margin-top: var(--ow-spacing-md);
+  margin-bottom: var(--ow-spacing-xs);
+}
+
+h3, .ow-h3 {
+  font-size: 24px;
+  margin-top: var(--ow-spacing-sm);
+  margin-bottom: var(--ow-spacing-xs);
+}
+
+h4, .ow-h4 {
+  font-size: 20px;
+  margin-top: var(--ow-spacing-sm);
+  margin-bottom: var(--ow-spacing-xs);
+}
+
+h5, .ow-h5 {
+  font-size: 18px;
+  margin-top: var(--ow-spacing-xs);
+  margin-bottom: var(--ow-spacing-xs);
+}
+
+h6, .ow-h6 {
+  font-size: 16px;
+  margin-top: var(--ow-spacing-xs);
+  margin-bottom: var(--ow-spacing-xs);
+}
+
+/* ========================================
+   본문 텍스트 스타일 (Body Text Styles)
+   ======================================== */
+p, .ow-text {
+  font-size: var(--ow-font-size-body);
+  line-height: var(--ow-line-height-body);
+  color: var(--ow-text-primary);
+  margin: 0 0 var(--ow-spacing-sm) 0;
+}
+
+/* ========================================
+   유틸리티 클래스 (Utility Classes)
+   ======================================== */
+.ow-text-center {
+  text-align: center;
+}
+
+.ow-text-primary {
+  color: var(--ow-primary);
+}
+
+.ow-text-secondary {
+  color: var(--ow-text-secondary);
+}
+
+/* ========================================
+   반응형 타이포그래피 (Responsive Typography)
+   ======================================== */
+
+/* 태블릿 (Tablet) - max-width: 768px */
+@media (max-width: 768px) {
+  :root {
+    --ow-font-size-h1: 36px;
+    --ow-font-size-h2: 24px;
+    --ow-font-size-body: 14px;
+  }
+  
+  h3, .ow-h3 {
+    font-size: 20px;
+  }
+  
+  h4, .ow-h4 {
+    font-size: 18px;
+  }
+  
+  h5, .ow-h5 {
+    font-size: 16px;
+  }
+  
+  h6, .ow-h6 {
+    font-size: 14px;
+  }
+}
+
+/* 모바일 (Mobile) - max-width: 480px */
+@media (max-width: 480px) {
+  :root {
+    --ow-font-size-h1: 28px;
+    --ow-font-size-h2: 20px;
+    --ow-font-size-body: 14px;
+  }
+  
+  h3, .ow-h3 {
+    font-size: 18px;
+  }
+  
+  h4, .ow-h4 {
+    font-size: 16px;
+  }
+  
+  h5, .ow-h5 {
+    font-size: 14px;
+  }
+  
+  h6, .ow-h6 {
+    font-size: 14px;
+  }
+}

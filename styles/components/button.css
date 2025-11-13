@@ -1,0 +1,116 @@
+/* Overwatch Button Styles */
+
+.ow-button {
+  /* Base styles */
+  background-color: var(--ow-primary);
+  color: var(--ow-white);
+  font-family: var(--ow-font-family);
+  font-size: var(--ow-font-size-h2); /* 30px */
+  font-weight: var(--ow-font-weight-normal);
+  
+  /* Dimensions */
+  min-width: 260px;
+  height: 60px;
+  padding: 6px 12px;
+  
+  /* Border */
+  border: none;
+  border-radius: var(--ow-radius-md); /* 10px */
+  
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  /* Interaction */
+  cursor: pointer;
+  transition: all var(--ow-transition-normal); /* 0.5s cubic-bezier */
+  user-select: none;
+  
+  /* Remove default focus outline */
+  outline: none;
+}
+
+
+/* Button States */
+.ow-button:hover {
+  background-color: var(--ow-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--ow-shadow-md);
+}
+
+.ow-button:active {
+  transform: translateY(0);
+  box-shadow: var(--ow-shadow-sm);
+}
+
+.ow-button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(250, 156, 29, 0.3);
+  outline: none;
+}
+
+.ow-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.ow-button:disabled:hover {
+  background-color: var(--ow-primary);
+  transform: none;
+  box-shadow: none;
+}
+
+
+/* Button Variants */
+.ow-button--secondary {
+  background-color: var(--ow-secondary);
+  color: var(--ow-white);
+}
+
+.ow-button--secondary:hover {
+  background-color: #5A5C5E;
+  transform: translateY(-2px);
+  box-shadow: var(--ow-shadow-md);
+}
+
+.ow-button--secondary:disabled:hover {
+  background-color: var(--ow-secondary);
+  transform: none;
+  box-shadow: none;
+}
+
+.ow-button--outline {
+  background-color: transparent;
+  color: var(--ow-primary);
+  border: 2px solid var(--ow-primary);
+}
+
+.ow-button--outline:hover {
+  background-color: var(--ow-primary);
+  color: var(--ow-white);
+  transform: translateY(-2px);
+  box-shadow: var(--ow-shadow-md);
+}
+
+.ow-button--outline:disabled:hover {
+  background-color: transparent;
+  color: var(--ow-primary);
+  transform: none;
+  box-shadow: none;
+}
+
+
+/* Button Sizes */
+.ow-button--small {
+  width: 180px;
+  height: 45px;
+  font-size: 20px;
+}
+
+.ow-button--large {
+  width: 320px;
+  height: 75px;
+  font-size: 36px;
+}
