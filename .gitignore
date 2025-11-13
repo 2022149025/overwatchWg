@@ -24,8 +24,8 @@ dist-ssr
 *.sw?
 
 # Font files (due to copyright - download separately)
-styles/fonts/*.ttf
-styles/fonts/*.otf
-styles/fonts/*.woff
-styles/fonts/*.woff2
+# styles/fonts/*.ttf
+# styles/fonts/*.otf
+# styles/fonts/*.woff
+# styles/fonts/*.woff2
 !styles/fonts/README.md
